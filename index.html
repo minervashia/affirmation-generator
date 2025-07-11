@@ -6,30 +6,64 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400..700&family=Lobster&family=PT+Mono&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <title> AI Affirmation Generator</title>
 </head>
 <body>
     <div class = container></div>
     <header>   
-    <h1>  AI Affirmation Generator</h1>
+    <h1> 🌻 AI Affirmation Generator</h1>
 </header>
+
+<main>  
+
+    <div class = "form-container">
+        <form id="affirmation-generator-form">  
+    <input 
+    type="text"
+    placeholder="Enter the theme of your Affirmation" 
+    autofocus
+    required
+    autocomplete+="off"
+    class="instructions"
+    id="user-instructions"
+    />
+    <input type="submit"class="submit-button" />
+    </form>
+       <div class="hint" > ie: confidence,empowerment,self-esteem,transformation,mindfulness,self-acceptance</div>
+    </div>
+        <div class="affirmation hidden " id="affirmation" ></div>
+    </main>
+
+
+
+
+
+
+
+
+
 <footer>
     This AI project was coded by
     <a
-      href=""
+      href="https://github.com/minervashia/affirmation-generator"
       targe="_blank"
     >
       Tess Allen</a
     >
     and is
     <a
-      href=""
+      href="https://github.com/minervashia/affirmation-generator"
       target="_blank"
     >
       open- sourced on GitGub</a
     >
     > and is
-    <a href="" target="_blank">
+    <a href="https://affirmationgenerator.netlify.app/" target="_blank">
       hosted on Netlify.</a
     >
   </footer>
